@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_company_info_company_information_banners",
+  "info": {
+    "displayName": "Company_Information_Banner",
+    "icon": "arrowRight"
+  },
+  "options": {},
+  "attributes": {
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Heading": {
+      "type": "string"
+    },
+    "Quantity": {
+      "type": "biginteger"
+    },
+    "Post_Description": {
+      "type": "string"
+    }
+  }
+}

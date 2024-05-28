@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "micronutrient_products",
+  "info": {
+    "singularName": "micronutrient-product",
+    "pluralName": "micronutrient-products",
+    "displayName": "Micronutrient-Products",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Heading": {
+      "type": "string"
+    },
+    "Cursor_Icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

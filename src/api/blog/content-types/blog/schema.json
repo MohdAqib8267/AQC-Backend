@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blogs",
+  "info": {
+    "singularName": "blog",
+    "pluralName": "blogs",
+    "displayName": "Blogs",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Banner_Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Blog_Content": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "rich"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    },
+    "Categories": {
+      "type": "customField",
+      "customField": "plugin::tagsinput.tags"
+    },
+    "Tags": {
+      "type": "customField",
+      "customField": "plugin::tagsinput.tags"
+    },
+    "blog_pages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog-page.blog-page"
+    }
+  }
+}

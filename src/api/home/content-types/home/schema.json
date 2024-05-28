@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "homes",
+  "info": {
+    "singularName": "home",
+    "pluralName": "homes",
+    "displayName": "Home",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Slider": {
+      "type": "component",
+      "repeatable": true,
+      "component": "slides.home-slider"
+    },
+    "Home_Gallery": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Cirtifications": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Technology": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "rich"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    },
+    "Used_Technologies": {
+      "type": "component",
+      "repeatable": true,
+      "component": "slides.home-slider"
+    },
+    "Home_video": {
+      "type": "customField",
+      "customField": "plugin::video-field.video"
+    },
+    "Company_Information": {
+      "type": "component",
+      "repeatable": true,
+      "component": "company-info.company-information-banner"
+    }
+  }
+}

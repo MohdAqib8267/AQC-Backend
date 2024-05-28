@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blog_pages",
+  "info": {
+    "singularName": "blog-page",
+    "pluralName": "blog-pages",
+    "displayName": "Blog_Pages"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Heading": {
+      "type": "text"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Heading"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Blog_Content": {
+      "type": "blocks"
+    },
+    "Blogless_content": {
+      "type": "text"
+    }
+  }
+}

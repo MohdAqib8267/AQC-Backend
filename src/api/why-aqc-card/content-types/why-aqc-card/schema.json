@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "why_aqc_cards",
+  "info": {
+    "singularName": "why-aqc-card",
+    "pluralName": "why-aqc-cards",
+    "displayName": "Why-Aqc-Card",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Card": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "rich"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    }
+  }
+}
